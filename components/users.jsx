@@ -4,7 +4,7 @@ async function Users({users}){
     return (
         <ul>
         {users.map(user => (
-          <Link key={user.id} href={"users${user.id}"}>
+          <Link href= {`/users/${user.id}`} key={user.id}>
             <li className="bg-slate-400 mb-2 p-4 rounded-md text-black flex justify-between" onClick={() => {alert(user.id)}}>
         
                 <div>

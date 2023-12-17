@@ -8,9 +8,7 @@ async function fetchUsers(){
 
 async function HomePage() {
    const users = await fetchUsers()
-   console.log(users);
-  
    return <Users users={users}/>
 }
 
-export default HomePage
+export default HomePage;
